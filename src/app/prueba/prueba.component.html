@@ -1,0 +1,20 @@
+<p *ngIf="mostrar">
+  {{hola + " " + modelo}}
+</p>
+<input type="text" [(ngModel)]="modelo">
+<button (click)="prueba()">
+boton
+</button>
+
+<table>
+  <thead>
+    <th>Nombre</th>
+    <th>Edad</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas">
+      <td>{{persona.nombre}}</td>
+      <td>{{ persona.edad }}</td>
+    </tr>
+  </tbody>
+</table>
